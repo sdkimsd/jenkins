@@ -4,7 +4,7 @@ node {
      }
 
      stage('Build image') {
-         app = docker.build("teichae/jenkins")
+         app = docker.build("sdkimsd/jenkins")
      }
      stage('Push image') {
          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
